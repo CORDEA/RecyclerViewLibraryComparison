@@ -1,6 +1,7 @@
 package jp.cordea.recyclerviewlibrarycomparison
 
 import dagger.Module
+import jp.cordea.recyclerviewlibrarycomparison.epoxy.EpoxyActivityModule
 import jp.cordea.recyclerviewlibrarycomparison.groupie.GroupieActivityModule
 import jp.cordea.recyclerviewlibrarycomparison.klaster.KlasterActivityModule
 
@@ -8,7 +9,8 @@ import jp.cordea.recyclerviewlibrarycomparison.klaster.KlasterActivityModule
     includes = [
         MainActivityModule::class,
         GroupieActivityModule::class,
-        KlasterActivityModule::class
+        KlasterActivityModule::class,
+        EpoxyActivityModule::class
     ]
 )
 class ActivityModule
