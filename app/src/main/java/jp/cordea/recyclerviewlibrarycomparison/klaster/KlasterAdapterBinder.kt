@@ -27,7 +27,7 @@ class KlasterAdapterBinder @Inject constructor(
     private var models: List<KlasterItemModel> = emptyList()
 
     val adapter = Klaster.withViewHolder<ViewHolder>()
-        .itemCount(models.size)
+        .itemCount { models.size }
         .viewHolder { _, parent -> ViewHolder(ListItemKlasterBinding.inflate(layoutInflater, parent, false)) }
         .bind { position -> binding.model = models[position] }
         .build()
