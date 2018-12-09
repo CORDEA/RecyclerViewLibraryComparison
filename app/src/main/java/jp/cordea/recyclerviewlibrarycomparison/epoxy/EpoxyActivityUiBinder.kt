@@ -30,6 +30,7 @@ class EpoxyActivityUiBinder private constructor(
                         id(model.hashCode())
                         title(model.title)
                         description(model.description)
+                        onClick { _ -> navigator.navigateToWeb(model.uri) }
                     }
                 }
             }

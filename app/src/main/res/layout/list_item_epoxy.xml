@@ -12,12 +12,17 @@
         <variable
             name="description"
             type="java.lang.String" />
+
+        <variable
+            name="onClick"
+            type="android.view.View.OnClickListener" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="72dp"
         android:foreground="?attr/selectableItemBackground"
+        android:onClick="@{onClick}"
         android:paddingStart="16dp"
         android:paddingEnd="16dp">
 
