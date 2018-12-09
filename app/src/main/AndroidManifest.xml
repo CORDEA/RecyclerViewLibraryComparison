@@ -10,8 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".klaster.KlasterActivity"></activity>
-        <activity android:name=".groupie.GroupieActivity"></activity>
+        <activity android:name=".epoxy.EpoxyActivity"></activity>
+        <activity android:name=".klaster.KlasterActivity" />
+        <activity android:name=".groupie.GroupieActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
