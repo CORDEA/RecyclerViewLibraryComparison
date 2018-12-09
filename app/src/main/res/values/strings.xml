@@ -2,4 +2,5 @@
     <string name="app_name">RecyclerViewLibraryComparison</string>
 
     <string name="groupie_button">Groupie</string>
+    <string name="klaster_button">Klaster</string>
 </resources>
