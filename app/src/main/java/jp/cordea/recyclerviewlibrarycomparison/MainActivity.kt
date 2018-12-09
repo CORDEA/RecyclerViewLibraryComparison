@@ -18,5 +18,6 @@ class MainActivity : AppCompatActivity() {
         val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
         binding.groupieButton.setOnClickListener { navigator.navigateToGroupie() }
         binding.klasterButton.setOnClickListener { navigator.navigateToKlaster() }
+        binding.epoxyButton.setOnClickListener { navigator.navigateToEpoxy() }
     }
 }
