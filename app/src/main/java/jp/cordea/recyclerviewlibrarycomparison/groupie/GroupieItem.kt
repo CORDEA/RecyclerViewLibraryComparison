@@ -3,6 +3,7 @@ package jp.cordea.recyclerviewlibrarycomparison.groupie
 import androidx.core.net.toUri
 import com.xwray.groupie.databinding.BindableItem
 import jp.cordea.recyclerviewlibrarycomparison.Language
+import jp.cordea.recyclerviewlibrarycomparison.ListItemNavigator
 import jp.cordea.recyclerviewlibrarycomparison.R
 import jp.cordea.recyclerviewlibrarycomparison.databinding.ListItemGroupieBinding
 import javax.inject.Inject
@@ -21,11 +22,11 @@ class GroupieItemModel(
 }
 
 class GroupieItem private constructor(
-    private val navigator: GroupieNavigator,
+    private val navigator: ListItemNavigator,
     private val model: GroupieItemModel
 ) : BindableItem<ListItemGroupieBinding>() {
     class Factory @Inject constructor(
-        private val navigator: GroupieNavigator
+        private val navigator: ListItemNavigator
     ) {
         fun create(model: GroupieItemModel) = GroupieItem(navigator, model)
     }

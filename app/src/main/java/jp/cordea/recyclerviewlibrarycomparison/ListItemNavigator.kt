@@ -1,11 +1,11 @@
-package jp.cordea.recyclerviewlibrarycomparison.groupie
+package jp.cordea.recyclerviewlibrarycomparison
 
 import android.app.Activity
 import android.content.Intent
 import android.net.Uri
 import javax.inject.Inject
 
-class GroupieNavigator @Inject constructor(
+class ListItemNavigator @Inject constructor(
     private val activity: Activity
 ) {
     fun navigateToWeb(uri: Uri) {
