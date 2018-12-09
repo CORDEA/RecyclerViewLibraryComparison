@@ -5,6 +5,7 @@ import jp.cordea.recyclerviewlibrarycomparison.groupie.GroupieActivityModule
 
 @Module(
     includes = [
+        MainActivityModule::class,
         GroupieActivityModule::class
     ]
 )
