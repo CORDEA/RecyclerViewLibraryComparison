@@ -3,6 +3,7 @@ package jp.cordea.recyclerviewlibrarycomparison
 import android.app.Activity
 import android.content.Intent
 import jp.cordea.recyclerviewlibrarycomparison.epoxy.EpoxyActivity
+import jp.cordea.recyclerviewlibrarycomparison.graywater.GraywaterActivity
 import jp.cordea.recyclerviewlibrarycomparison.groupie.GroupieActivity
 import jp.cordea.recyclerviewlibrarycomparison.klaster.KlasterActivity
 import javax.inject.Inject
@@ -20,5 +21,9 @@ class MainNavigator @Inject constructor(
 
     fun navigateToEpoxy() {
         activity.startActivity(Intent(activity, EpoxyActivity::class.java))
+    }
+
+    fun navigateToGraywater() {
+        activity.startActivity(Intent(activity, GraywaterActivity::class.java))
     }
 }

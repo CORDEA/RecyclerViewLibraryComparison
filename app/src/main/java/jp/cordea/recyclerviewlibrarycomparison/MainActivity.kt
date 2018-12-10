@@ -19,5 +19,6 @@ class MainActivity : AppCompatActivity() {
         binding.groupieButton.setOnClickListener { navigator.navigateToGroupie() }
         binding.klasterButton.setOnClickListener { navigator.navigateToKlaster() }
         binding.epoxyButton.setOnClickListener { navigator.navigateToEpoxy() }
+        binding.graywaterButton.setOnClickListener { navigator.navigateToGraywater() }
     }
 }
