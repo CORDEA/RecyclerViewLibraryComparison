@@ -1,12 +1,14 @@
 package jp.cordea.recyclerviewlibrarycomparison.graywater
 
 import com.tumblr.graywater.GraywaterAdapter
+import jp.cordea.recyclerviewlibrarycomparison.ListItemNavigator
 import jp.cordea.recyclerviewlibrarycomparison.R
 import javax.inject.Inject
 import javax.inject.Provider
 
-class GraywaterBinder @Inject constructor() :
-    GraywaterAdapter.Binder<GraywaterItemModel, GraywaterViewHolderCreator.ViewHolder, GraywaterViewHolderCreator.ViewHolder> {
+class GraywaterBinder @Inject constructor(
+    private val navigator: ListItemNavigator
+) : GraywaterAdapter.Binder<GraywaterItemModel, GraywaterViewHolderCreator.ViewHolder, GraywaterViewHolderCreator.ViewHolder> {
     override fun prepare(
         model: GraywaterItemModel,
         binderList: MutableList<Provider<GraywaterAdapter.Binder<in GraywaterItemModel, GraywaterViewHolderCreator.ViewHolder, out GraywaterViewHolderCreator.ViewHolder>>>?,
@@ -22,6 +24,7 @@ class GraywaterBinder @Inject constructor() :
         actionListener: GraywaterAdapter.ActionListener<GraywaterItemModel, GraywaterViewHolderCreator.ViewHolder, GraywaterViewHolderCreator.ViewHolder>?
     ) {
         holder.binding.model = model
+        holder.binding.root.setOnClickListener { navigator.navigateToWeb(model.uri) }
     }
 
     override fun getViewType(model: GraywaterItemModel?): Int = R.layout.list_item_graywater
