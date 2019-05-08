@@ -20,5 +20,6 @@ class MainActivity : AppCompatActivity() {
         binding.klasterButton.setOnClickListener { navigator.navigateToKlaster() }
         binding.epoxyButton.setOnClickListener { navigator.navigateToEpoxy() }
         binding.graywaterButton.setOnClickListener { navigator.navigateToGraywater() }
+        binding.bentoButton.setOnClickListener { navigator.navigateToBento() }
     }
 }

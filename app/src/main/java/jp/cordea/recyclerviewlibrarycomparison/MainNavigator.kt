@@ -2,6 +2,7 @@ package jp.cordea.recyclerviewlibrarycomparison
 
 import android.app.Activity
 import android.content.Intent
+import jp.cordea.recyclerviewlibrarycomparison.bento.BentoActivity
 import jp.cordea.recyclerviewlibrarycomparison.epoxy.EpoxyActivity
 import jp.cordea.recyclerviewlibrarycomparison.graywater.GraywaterActivity
 import jp.cordea.recyclerviewlibrarycomparison.groupie.GroupieActivity
@@ -25,5 +26,9 @@ class MainNavigator @Inject constructor(
 
     fun navigateToGraywater() {
         activity.startActivity(Intent(activity, GraywaterActivity::class.java))
+    }
+
+    fun navigateToBento() {
+        activity.startActivity(Intent(activity, BentoActivity::class.java))
     }
 }

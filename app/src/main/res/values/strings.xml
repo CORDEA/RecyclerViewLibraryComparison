@@ -5,4 +5,5 @@
     <string name="klaster_button">Klaster</string>
     <string name="epoxy_button">Epoxy</string>
     <string name="graywater_button">Graywater</string>
+    <string name="bento_button">Bento</string>
 </resources>
