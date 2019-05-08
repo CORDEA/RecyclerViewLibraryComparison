@@ -15,7 +15,7 @@ class BentoComponentViewHolder : ComponentViewHolder<BentoComponentPresenter, Be
     }
 
     override fun inflate(parent: ViewGroup): View =
-        ComponentBentoBinding.inflate(LayoutInflater.from(parent.context))
+        ComponentBentoBinding.inflate(LayoutInflater.from(parent.context), parent, false)
             .also { binding = it }
             .root
 }
