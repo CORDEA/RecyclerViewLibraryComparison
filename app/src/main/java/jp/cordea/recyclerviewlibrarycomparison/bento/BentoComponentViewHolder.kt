@@ -4,10 +4,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.yelp.android.bento.core.ComponentViewHolder
-import jp.cordea.recyclerviewlibrarycomparison.databinding.ListItemBentoBinding
+import jp.cordea.recyclerviewlibrarycomparison.databinding.ComponentBentoBinding
 
 class BentoComponentViewHolder : ComponentViewHolder<BentoComponentPresenter, BentoComponentModel>() {
-    private lateinit var binding: ListItemBentoBinding
+    private lateinit var binding: ComponentBentoBinding
 
     override fun bind(presenter: BentoComponentPresenter, element: BentoComponentModel) {
         binding.model = element
@@ -15,7 +15,7 @@ class BentoComponentViewHolder : ComponentViewHolder<BentoComponentPresenter, Be
     }
 
     override fun inflate(parent: ViewGroup): View =
-        ListItemBentoBinding.inflate(LayoutInflater.from(parent.context))
+        ComponentBentoBinding.inflate(LayoutInflater.from(parent.context))
             .also { binding = it }
             .root
 }
