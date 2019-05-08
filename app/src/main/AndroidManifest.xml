@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".graywater.GraywaterActivity"></activity>
+        <activity android:name=".bento.BentoActivity"></activity>
+        <activity android:name=".graywater.GraywaterActivity" />
         <activity android:name=".epoxy.EpoxyActivity" />
         <activity android:name=".klaster.KlasterActivity" />
         <activity android:name=".groupie.GroupieActivity" />
