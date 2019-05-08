@@ -55,6 +55,8 @@ dependencies {
     implementation "com.airbnb.android:epoxy-databinding:3.0.0"
     kapt 'com.airbnb.android:epoxy-processor:3.0.0'
 
+    implementation "com.yelp.android:bento:14.0.0"
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
